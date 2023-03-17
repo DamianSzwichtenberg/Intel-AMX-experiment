@@ -8,20 +8,20 @@
 #define BLOCK_SIZE 4
 
 struct tile_layout_t {
-    uint8_t palette_id = 1;
-    uint8_t start_row = 0;
-    uint8_t reserved[14] = {0};
-    uint16_t colsb[8] = {MAX_COLS_B, MAX_COLS_B, MAX_COLS_B};
-    uint8_t reserved2[16] = {0};
-    uint8_t rows[8] = {MAX_ROWS, MAX_ROWS, MAX_ROWS};
-    uint8_t reserved3[8] = {0};
+  uint8_t palette_id = 1;
+  uint8_t start_row = 0;
+  uint8_t reserved[14] = {0};
+  uint16_t colsb[8] = {MAX_COLS_B, MAX_COLS_B, MAX_COLS_B};
+  uint8_t reserved2[16] = {0};
+  uint8_t rows[8] = {MAX_ROWS, MAX_ROWS, MAX_ROWS};
+  uint8_t reserved3[8] = {0};
 };
 
 struct scoped_config_t {
-    scoped_config_t();
-    ~scoped_config_t();
+  scoped_config_t();
+  ~scoped_config_t();
 
-    tile_layout_t layout;
+  tile_layout_t layout;
 };
 
 bool request_AMX();
