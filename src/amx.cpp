@@ -1,3 +1,9 @@
+//==============================================================
+// Copyright © 2023 Intel Corporation
+//
+// SPDX-License-Identifier: MIT
+// =============================================================
+
 #include "amx/amx.h"
 
 #include <immintrin.h>
