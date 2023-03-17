@@ -4,12 +4,11 @@
 // SPDX-License-Identifier: MIT
 // =============================================================
 
-#include "amx/amx.h"
-
 #include <immintrin.h>
 
 #include <cstdint>
 
+#include "amx/amx.h"
 #include "amx/utils.h"
 
 #ifdef __linux__
